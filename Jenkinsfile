@@ -11,5 +11,12 @@ pipeline {
                   } 
                  }
 
+            stage('Build') {
+  
+              steps {
+             
+                 sh 'cd /home/siva/.jenkins/jobs/Spring-application-pipeline/workspace/mvn install'
+
+
      } 
    }
