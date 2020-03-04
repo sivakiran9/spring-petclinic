@@ -6,8 +6,12 @@ pipeline {
 
               steps {
 
-                 sh 'git clone https://sivakiran9:Siva_787@github.com/sivakiran9/spring-petclinic.git'
-             
+                 sh '''
+                     rm -rf *
+ git clone https://sivakiran9:Siva_787@github.com/sivakiran9/spring-petclinic.git
+                
+                  '''             
+
                   } 
                  }
 
