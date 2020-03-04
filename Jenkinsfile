@@ -31,6 +31,7 @@ pipeline {
               steps {
 
                  sh '''
+                      cd spring-petclinic 
                      docker build -t spapppipeimg .
                   '''
                  }
