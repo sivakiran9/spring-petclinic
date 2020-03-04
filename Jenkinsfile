@@ -40,7 +40,7 @@ pipeline {
 
             state('Create container')  {
  
-              staeps {
+              steps {
   
                  sh '''
                
