@@ -19,7 +19,10 @@ pipeline {
   
               steps {
              
-                 sh 'cd /home/siva/.jenkins/jobs/Spring-application-pipeline/workspace/mvn install'
+                 sh '''
+                    cd spring-petclinic 
+                    mvn install
+                 '''
 
                  }
                }
