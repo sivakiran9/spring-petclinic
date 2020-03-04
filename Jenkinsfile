@@ -17,6 +17,7 @@ pipeline {
              
                  sh 'cd /home/siva/.jenkins/jobs/Spring-application-pipeline/workspace/mvn install'
 
-
+                 }
+               }
      } 
    }
