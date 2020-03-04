@@ -43,8 +43,10 @@ pipeline {
               steps {
   
                  sh '''
+
+                 docker tag spapppipeimg docker-repo:5000/spapppipeimg
                
-                   docker run -itd --name sppipeline -p 9292:8080 spapppipeimg
+                   docker run -itd --name sppipeline -p 9292:8080 docker-repo:5000/spapppipeimg
 
                  '''
                 }
