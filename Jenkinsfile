@@ -32,12 +32,22 @@ pipeline {
 
                  sh '''
                       cd spring-petclinic 
+
                      docker build -t spapppipeimg .
                   '''
                  }
                }            
 
+            state('Create container')  {
+ 
+              staeps {
+  
+                 sh '''
+               
+                   docker run -itd --name sppipeline -p 9292:8080 spapppipeimg
 
-
+                 '''
+                }
+              } 
      } 
    }
