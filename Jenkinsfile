@@ -38,7 +38,7 @@ pipeline {
                  }
                }            
 
-            state('Create container')  {
+            stage('Create container')  {
  
               steps {
   
