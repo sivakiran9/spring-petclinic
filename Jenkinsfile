@@ -26,5 +26,17 @@ pipeline {
 
                  }
                }
+            stage('Create image') {
+ 
+              steps {
+
+                 sh '''
+                     docker build -t spapppipeimg .
+                  '''
+                 }
+               }            
+
+
+
      } 
    }
